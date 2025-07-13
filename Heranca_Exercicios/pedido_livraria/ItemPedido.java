@@ -1,7 +1,3 @@
-package pedido_livraria;
-
-import pedido_livraria.produtos.Produto;
-
 public class ItemPedido {
 
     private int quantidade;
