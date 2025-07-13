@@ -4,6 +4,18 @@ public class PersonagemGame {
     private String nome; 
 
 
+    public void tomarDano(int quantidadeDeDano){
+
+        int newSaudeAtual = saudeAtual - quantidadeDeDano;
+        this.saudeAtual = newSaudeAtual < 0 ? 0 : newSaudeAtual;
+    }
+
+    public void receberCura (int quantidadeDeCura){
+
+        int newSaudeAtual = saudeAtual + quantidadeDeCura;
+        this.saudeAtual = newSaudeAtual > 100 ? 100 : newSaudeAtual;
+    }
+
     public String getNome(){
         return this.nome;
     }
