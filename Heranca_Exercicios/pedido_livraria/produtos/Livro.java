@@ -15,6 +15,18 @@ public class Livro extends Produto {
 
     @Override
     public double obterPrecoLiquido() {
-        return 0;
+        return precoBruto * 1.15;
+    }
+
+    public int getPaginas() {
+        return paginas;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public int getEdicao() {
+        return edicao;
     }
 }

@@ -11,7 +11,13 @@ public class Pedido {
     }
 
     public double calcularTotal() {
-        return 0;
+
+        double total = 0;
+        for (ItemPedido itemPedido : this.items) {
+            double grossValue = itemPedido.getProduto().obterPrecoLiquido() * itemPedido.getQuantidade();
+            total += grossValue - (grossValue * percentualDesconto / 100);
+        }
+        return total;
     }
 
 }
