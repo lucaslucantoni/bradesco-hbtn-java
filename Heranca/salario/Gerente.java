@@ -16,6 +16,6 @@ public class Gerente extends Empregado {
             return bonusFixo + diffMeta;
         }
 
-        return 0;
+        return super.calcularBonus(departamento);
     }
 }
