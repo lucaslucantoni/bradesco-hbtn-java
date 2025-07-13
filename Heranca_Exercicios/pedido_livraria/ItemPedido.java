@@ -1,7 +1,3 @@
-package pedido_livraria;
-
-import pedido_livraria.produtos.Produto;
-
 public class ItemPedido {
 
     private int quantidade;
@@ -16,6 +12,7 @@ public class ItemPedido {
         this.produto = produto;
         this.quantidade = quantidade;
     }
+
 
     public int getQuantidade() {
         return quantidade;
