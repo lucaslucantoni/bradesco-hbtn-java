@@ -1,6 +1,6 @@
-package Generics.midias;
 public class Program {
     public static void main(String[] args) {
+
         Livro livro1 = new Livro("Xato", 1);
         Livro livro2 = new Livro("Coracoes sujos", 3);
         Livro livro3 = new Livro("Harry Potter e a Pedra Filosofal", 1);
