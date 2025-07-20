@@ -1,5 +1,6 @@
 package Interfaces.workflow;
 
-public class FormatoVideo {
+public enum FormatoVideo {
     
+    MPEG, AVI, WMV, MP4, MKV;
 }

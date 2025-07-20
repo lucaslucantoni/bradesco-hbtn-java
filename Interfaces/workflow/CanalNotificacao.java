@@ -1,5 +1,5 @@
 package Interfaces.workflow;
 
-public class CanalNotificacao {
-    
-}
+public interface CanalNotificacao {
+    void notificar(Mensagem mensagem);
+} 

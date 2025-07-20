@@ -1,5 +1,11 @@
 package Interfaces.workflow;
 
-public class Slack {
+public class Slack implements CanalNotificacao{
+
+    @Override
+    public void notificar(Mensagem mensagem) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'notificar'");
+    }
     
 }
