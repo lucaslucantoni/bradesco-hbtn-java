@@ -1,9 +1,7 @@
-package Interfaces.workflow;
-
 public class Program {
     
     public static void main(String[] args) {
-        
+
         ProcessadorVideo processadorVideo1 = new ProcessadorVideo();
         processadorVideo1.registrarCanal(new Slack());
         processadorVideo1.registrarCanal(new Teams());

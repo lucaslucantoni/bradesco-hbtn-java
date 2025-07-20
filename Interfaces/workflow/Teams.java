@@ -1,5 +1,3 @@
-package Interfaces.workflow;
-
 public class Teams implements CanalNotificacao  {
 
     @Override

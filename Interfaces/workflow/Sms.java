@@ -1,5 +1,3 @@
-package Interfaces.workflow;
-
 public class Sms implements CanalNotificacao {
 
     @Override

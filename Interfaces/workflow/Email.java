@@ -1,5 +1,3 @@
-package Interfaces.workflow;
-
 public class Email implements CanalNotificacao {
 
     @Override
