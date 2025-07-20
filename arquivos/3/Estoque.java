@@ -7,9 +7,9 @@ import java.util.Formatter;
 import java.util.List;
 
 public class Estoque {
-    
     private String fileName = "estoque.csv";
     private String root = System.getProperty("user.dir");
+    //private String path = root + File.separator + "arquivos" + File.separator + "3" + File.separator + fileName;
     private String path = "/home/student_jail/student_repo/arquivos/3/estoque.csv";
 
     public Estoque(String fileName) {
@@ -54,6 +54,7 @@ public class Estoque {
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
+
     }
 
     private int gerarId(List<Produto> produtos) {
