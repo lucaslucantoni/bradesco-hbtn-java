@@ -4,8 +4,7 @@ public class Slack implements CanalNotificacao{
 
     @Override
     public void notificar(Mensagem mensagem) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'notificar'");
+        System.out.printf("[SLACK] {%s} - %s\n",mensagem.getTipoMensagem().name(), mensagem.getTexto());
     }
     
 }

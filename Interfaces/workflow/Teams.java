@@ -4,8 +4,7 @@ public class Teams implements CanalNotificacao  {
 
     @Override
     public void notificar(Mensagem mensagem) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'notificar'");
+        System.out.printf("[TEAMS] {%s} - %s\n",mensagem.getTipoMensagem().name(), mensagem.getTexto());
     }
  
     
