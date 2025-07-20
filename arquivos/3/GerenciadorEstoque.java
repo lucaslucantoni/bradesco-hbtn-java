@@ -16,7 +16,7 @@ public class GerenciadorEstoque {
             System.out.println("5. Sair");
             System.out.print("Escolha uma opção: ");
             int opcao = scanner.nextInt();
-            scanner.nextLine(); 
+            scanner.nextLine(); // Limpar o buffer
 
 
             switch (opcao) {
