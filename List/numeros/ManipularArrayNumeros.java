@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class ManipularArrayNumerosanipularArrayNumeros {
+public class ManipularArrayNumeros {
     public static int buscarPosicaoNumero(List<Integer> lista, Integer numero) {
         return lista.indexOf(numero);
     }
