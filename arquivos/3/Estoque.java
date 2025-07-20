@@ -54,7 +54,17 @@ public class Estoque {
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
-
+//        PrintWriter printWriter = null;
+//        for(Produto produto : produtos) {
+//            try (BufferedWriter writer = new BufferedWriter(new FileWriter(path))) {
+//                printWriter = new PrintWriter(writer);
+//                printWriter.println(produto.toCsv());
+//            } catch (IOException e) {
+//                throw new RuntimeException(e);
+//            }
+//        }
+//        printWriter.flush();
+//        printWriter.close();
     }
 
     private int gerarId(List<Produto> produtos) {
