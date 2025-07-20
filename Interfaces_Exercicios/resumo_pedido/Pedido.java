@@ -6,7 +6,7 @@ public class Pedido {
     private double total;
     private Frete frete;
 
-    public Pedido0(int codigo, double peso, double total) {
+    public Pedido(int codigo, double peso, double total) {
         this.codigo = codigo;
         this.peso = peso;
         this.total = total;

@@ -7,7 +7,7 @@ public class ProcessadorPedido {
         this.provedorFrete = provedorFrete;
     }
 
-    public void processar(Pedido0 pedido0) {
-        pedido0.setFrete(provedorFrete.calcularFrete(pedido0.getPeso(), pedido0.getTotal()));
+    public void processar(Pedido pedido) {
+        pedido.setFrete(provedorFrete.calcularFrete(pedido.getPeso(), pedido.getTotal()));
     }
 }
