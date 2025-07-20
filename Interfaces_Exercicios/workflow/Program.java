@@ -1,9 +1,7 @@
-package Interfaces_Exercicios.workflow;
-
-import Interfaces_Exercicios.workflow.atividades.CarregarVideo;
-import Interfaces_Exercicios.workflow.atividades.CodificarVideo;
-import Interfaces_Exercicios.workflow.atividades.EnviarEmail;
-import Interfaces_Exercicios.workflow.atividades.ModificarStatusVideo;
+import atividades.CarregarVideo;
+import atividades.CodificarVideo;
+import atividades.EnviarEmail;
+import atividades.ModificarStatusVideo;
 
 public class Program {
     public static void main(String[] args) {
