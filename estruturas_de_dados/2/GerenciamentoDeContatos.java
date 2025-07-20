@@ -92,5 +92,8 @@ public class GerenciamentoDeContatos {
         gestao.removerContato("João");
 
 
+        // Exibindo todos os contatos após remoções
+        System.out.println("\nExibindo todos os contatos após remoções:");
+        gestao.exibirContatos();
     }
 }
