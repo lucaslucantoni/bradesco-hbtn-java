@@ -1,28 +1,30 @@
+import java.util.*;    
+import java.util.Locale;  
+
 public class Program {
     public static void main(String[] args) {
-        Livro livro1 = new Livro("Xato", 1);
-        Livro livro2 = new Livro("Coracoes sujos", 3);
-        Livro livro3 = new Livro("Harry Potter e a Pedra Filosofal", 1);
+        Locale.setDefault(new Locale("pt", "BR"));
+        Comida comida1 = new Comida("arroz", 100, 15.9);
+        Comida comida2 = new Comida("feijao", 80, 23.0);
+        Comida comida3 = new Comida("pacoca", 165, 7.5);
 
-        Video video1 = new Video("Aprendendo Java Generics", 25);
-        Video video2 = new Video("Apresentando Wildcards Generics em Java", 25);
+        Eletronico eletronico1 = new Eletronico("Smart TV LED 32 HD LG", 1452.55);
+        Eletronico eletronico2 = new Eletronico("Nintendo Switch", 2990);
 
-        Jornal jornal1 = new Jornal("Folha de Sao Paulo", 130);
-        Jornal jornal2 = new Jornal("Estadao", 113);
+        Armazem<Eletronico> armazem1 = new Armazem<>();
+        armazem1.adicionarAoInventario("TV LG", eletronico1);
+        armazem1.adicionarAoInventario("Switch", eletronico2);
 
-        Biblioteca<Livro> bibliotecaLivros = new Biblioteca<>();
-        bibliotecaLivros.adicionarMidia(livro1);
-        bibliotecaLivros.adicionarMidia(livro2);
-        bibliotecaLivros.adicionarMidia(livro3);
+        Eletronico eletronicoBuscado1 = armazem1.obterDoInventario("Switch");
 
-        System.out.println(bibliotecaLivros.obterListaMidias());
+        System.out.println(eletronicoBuscado1);
 
-        Biblioteca<Midia> bibliotecaMidias = new Biblioteca<>();
-        bibliotecaMidias.adicionarMidia(livro1);
-        bibliotecaMidias.adicionarMidia(video1);
-        bibliotecaMidias.adicionarMidia(video2);
-        bibliotecaMidias.adicionarMidia(jornal2);
+        Armazem<Comida> armazem2 = new Armazem<>();
+        armazem2.adicionarAoInventario("feijao", comida2);
+        armazem2.adicionarAoInventario("pacoca", comida3);
 
-        System.out.println(bibliotecaMidias.obterListaMidias());
+        Comida comidaBuscada1 = armazem2.obterDoInventario("feijao");   
+
+        System.out.println(comidaBuscada1);
     }
 }
