@@ -1,10 +1,8 @@
-package Interfaces_Exercicios.resumo_pedido;
+import provedores.JadLog;
+import provedores.Loggi;
+import provedores.Sedex;
 
 import java.util.Locale;
-
-import Interfaces_Exercicios.resumo_pedido.provedores.JadLog;
-import Interfaces_Exercicios.resumo_pedido.provedores.Loggi;
-import Interfaces_Exercicios.resumo_pedido.provedores.Sedex;
 
 public class Program {
     
