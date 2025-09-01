@@ -32,8 +32,8 @@ import java.util.List;
             List<Produto> produtosLivro2 = Consulta.obterLivrosDoPedido(pedido2);
             List<Produto> produtosLivro3 = Consulta.obterLivrosDoPedido(pedido3);
 
-            System.out.println(produtosLivro1.replace('.', ','));
-            System.out.println(produtosLivro2.replace('.', ','));
-            System.out.println(produtosLivro3.replace('.', ','));
+            System.out.println(produtosLivro1);
+            System.out.println(produtosLivro2);
+            System.out.println(produtosLivro3);
         }
     }
