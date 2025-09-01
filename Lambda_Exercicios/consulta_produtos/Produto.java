@@ -29,7 +29,7 @@ public class Produto {
         return quantidadeEmEstoque;
     }
 
-    public TiposProduto_ getTipo() {
+    public TiposProduto getTipo() {
         return tipo;
     }
 
