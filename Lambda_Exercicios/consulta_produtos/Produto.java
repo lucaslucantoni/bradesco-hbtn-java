@@ -3,7 +3,7 @@ public class Produto {
     private double preco;
     private double peso;
     private int quantidadeEmEstoque;
-    private TiposProduto_ tipo;
+    private TiposProduto tipo;
 
     public Produto(String nome, double preco, double peso, int quantidadeEmEstoque, TiposProduto tipo) {
         this.nome = nome;
