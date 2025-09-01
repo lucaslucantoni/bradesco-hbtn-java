@@ -45,7 +45,6 @@ public class Produto {
 
     @Override
     public String toString() {
-        String v = String.format("[%d] %s %s R$ %,.2f", this.codigo, this.nome, this.categoria, this.preco);
-        return v.replace(".", ",");
+        return String.format("[%d] %s %s R$ %,.2f", this.codigo, this.nome, this.categoria, this.preco);
     }
 }
