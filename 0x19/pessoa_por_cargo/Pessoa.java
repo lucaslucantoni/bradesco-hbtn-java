@@ -1,6 +1,7 @@
 import java.util.Locale;
 
 public class Pessoa {
+    
     private int codigo;
     private String nome;
     private String cargo;
