@@ -16,11 +16,11 @@ public class Program {
         List<Pessoa> todasPessoas = List.of(Pessoa1, Pessoa2, Pessoa3, Pessoa4, Pessoa5,
                 Pessoa6, Pessoa7, Pessoa8, Pessoa9, Pessoa10);
 
-        Map<String, List<Pessoa>> pessoasPorCargo1 = ConsultaPessoas0.obterPessoasPorCargo(todasPessoas);
-        Map<String, List<Pessoa>> pessoasPorCargo2 = ConsultaPessoas0.obterPessoasPorCargo(
+        Map<String, List<Pessoa>> pessoasPorCargo1 = ConsultaPessoas.obterPessoasPorCargo(todasPessoas);
+        Map<String, List<Pessoa>> pessoasPorCargo2 = ConsultaPessoas.obterPessoasPorCargo(
                 List.of(Pessoa1, Pessoa4, Pessoa10)
         );
-        Map<String, List<Pessoa>> pessoasPorCargo3 = ConsultaPessoas0.obterPessoasPorCargo(
+        Map<String, List<Pessoa>> pessoasPorCargo3 = ConsultaPessoas.obterPessoasPorCargo(
                 List.of(Pessoa4, Pessoa9)
         );
 
